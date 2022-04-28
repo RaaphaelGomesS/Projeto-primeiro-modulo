@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Mordecai Cachorro quente</title>
+    <link rel="stylesheet" href="/mordecai/css/mordecai-cachorro-quente.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+       
+    <div class="container">
+        
+        <div class="imagem">
+            <img src="/mordecai/imagens/NicePng_mordecai-png_2011221.png">
+        </div>
+
+        <div class="texto">
+            <h1>Você escolheu cachorro quente! Você vai...</h1>
+      
+            <ol>
+                <li>Comprar os ingredientes e fazer sozinho</li>
+                <li>Comprar pronto na barraquinha duvidosa ao lado</li>
+            </ol>
+
+            
+            <div class="container-button"> 
+                <a id="button" href="#" onclick="selecionar()">Aperte para escolher</a>
+            </div>
+
+        </div>
+    </div> 
+
+</body>
+
+<script>  
+    function selecionar(){
+    
+        var Usr= prompt("Escolha 1 ou 2");
+        
+        while (true){
+            if (Usr == 1){
+                return window.location.href = "/mordecai/html/mordecai-cachorro-quente-bom.html"
+            
+            }else if (Usr == 2){
+                return window.location.href = "/mordecai/html/mordecai-cachorro-fracasso1.html"
+            
+            }else{
+                alert("Valor inserido inválido!");
+                var Usr= prompt("Escolha 1 ou 2")
+            }
+        }
+    }
+</script>
+
+</html>

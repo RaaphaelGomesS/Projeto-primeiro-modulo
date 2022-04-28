@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Pairulito Tiramisu</title>
+    <link rel="stylesheet" href="/pairorito/css/pairolito-inicio.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+       
+    <div class="container">
+        
+        <div class="imagem">
+            <img src="/pairorito/imagens/favpng_pops-maellard-marceline-the-vampire-queen-mordecai-cartoon-network-wikia.png">
+        </div>
+
+        <div class="texto">
+            <h1>hmmmm, como vai prepar o Tiramisu?</h1>
+      
+            <ol>
+                <li>comprar os ingredientes (líquido estranho[césio 137], whiskas sabor carne e sorvete de baunilha)</li><br>
+                <li>comprar pronto</li>
+            </ol>
+
+            
+            <div class="container-button"> 
+                <a id="button" href="#" onclick="selecionar()">Aperte para escolher</a>
+            </div>
+
+        </div>
+    </div> 
+
+</body>
+
+<script>
+   
+    function selecionar(){
+    
+        var Usr= prompt("Escolha 1 ou 2");
+        
+        while (true){
+            if (Usr == 1){
+                return window.location.href = "/pairorito/html/pairolito-cesio.html"
+            
+            }else if (Usr == 2){
+                return window.location.href = "/pairorito/html/pairolito-compra.html"
+            
+            
+            }else{
+                alert("Valor inserido inválido!");
+                var Usr= prompt("Escolha 1 ou 2")
+            }
+        }
+    }
+
+</script>
+
+</html>

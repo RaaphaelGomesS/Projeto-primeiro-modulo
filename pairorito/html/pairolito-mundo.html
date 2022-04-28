@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Pairulito pelo mundo</title>
+    <link rel="stylesheet" href="/pairorito/css/pairolito-mundo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+       
+    <div class="container">
+        
+        <div class="imagem">
+            <img src="/pairorito/imagens/we_can_all_be_turds_by_kol98-d6ovxn5.png">
+        </div>
+
+        <div class="texto">
+            <h1>Pairulito entra em uma jornada em busca dos ingredientes perfeitos, e fica 15 anos viajando ao redor do mundo. O que fazer agora?</h1>
+      
+            <ol>
+                <li>Finalizar a pesquisa e volta para casa</li>
+                <li>Adentrar o ramo de tortas!</li>
+            </ol>
+
+            
+            <div class="container-button"> 
+                <a id="button" href="#" onclick="selecionar()">Aperte para escolher</a>
+            </div>
+
+        </div>
+    </div> 
+
+</body>
+
+<script>
+   
+    function selecionar(){
+    
+        var Usr= prompt("Escolha 1 ou 2");
+        
+        while (true){
+            if (Usr == 1){
+                return window.location.href = "/pairorito/html/pairolito-mundo-fail.html"
+            
+            }else if (Usr == 2){
+                return window.location.href = "/pairorito/html/pairolito-mundo-fail2.html"
+            
+            
+            }else{
+                alert("Valor inserido inválido!");
+                var Usr= prompt("Escolha 1 ou 2")
+            }
+        }
+    }
+
+</script>
+
+</html>

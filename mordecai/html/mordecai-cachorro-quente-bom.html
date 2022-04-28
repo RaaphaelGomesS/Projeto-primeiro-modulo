@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Inicio Mordecai</title>
+    <link rel="stylesheet" href="/mordecai/css/mordecai-cachorro-quente-bom.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+       
+    <div class="container">
+        
+        <div class="imagem">
+            <img src="/mordecai/imagens/kisspng-regular-show-mordecai-and-rigby-in-8-bit-land-reg-5b08f037ded137.0129100615273124399127.png">
+        </div>
+
+        <div class="texto">
+            <h1>Você compra os ingredientes e se arrisca na cozinha, então você...</h1>
+      
+            <ol>
+                <li>Decide apelar para a receita secreta secular da família</li>
+                <li>tenta fazer sem ajuda</li>
+            </ol>
+
+            
+            <div class="container-button"> 
+                <a id="button" href="#" onclick="selecionar()">Aperte para escolher</a>
+            </div>
+
+        </div>
+    </div> 
+
+</body>
+
+<script>  
+    function selecionar(){
+    
+        var Usr= prompt("Escolha 1 ou 2");
+        
+        while (true){
+            if (Usr == 2){
+                return window.location.href = "/mordecai/html/mordecai-cachorro-quente-final.html"
+            
+            }else if (Usr == 1){
+                return window.location.href = "/mordecai/html/mordecai-cachorro-fracasso.html"
+            
+            }else{
+                alert("Valor inserido inválido!");
+                var Usr= prompt("Escolha 1 ou 2")
+            }
+        }
+    }
+</script>
+
+</html>

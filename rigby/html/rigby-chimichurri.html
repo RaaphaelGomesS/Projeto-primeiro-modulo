@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Rigby Chimichurri</title>
+    <link rel="stylesheet" href="/rigby/css/rigby-chimichurri.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+       
+    <div class="container">
+        
+        <div class="imagem">
+            <img src="/rigby/imagens/pngegg (2).png">
+        </div>
+
+        <div class="texto">
+            <h1>Chimichurri leva...feijão? quais são os itens que faltam pra sua receita?</h1>
+      
+            <ol>
+                <li>um líquido estranho no final da prateleira(Césio 137), whiskas sabor carne e sorvete de baunilha</li><br>
+                <li>Extrato de tomate, carne moida e dedo-de-moça</li>
+            </ol>
+
+            
+            <div class="container-button"> 
+                <a id="button" href="#" onclick="selecionar()">Aperte para escolher</a>
+            </div>
+
+        </div>
+    </div> 
+
+</body>
+
+<script>  
+    function selecionar(){
+    
+        var Usr= prompt("Escolha 1 ou 2");
+        
+        while (true){
+            if (Usr == 1){
+                return window.location.href = "/rigby/html/rigby-cesio.html"
+            
+            }else if (Usr == 2){
+                return window.location.href = "/rigby/html/rigby-chili.html"
+            
+            }else{
+                alert("Valor inserido inválido!");
+                var Usr= prompt("Escolha 1 ou 2")
+            }
+        }
+    }
+</script>
+
+</html>

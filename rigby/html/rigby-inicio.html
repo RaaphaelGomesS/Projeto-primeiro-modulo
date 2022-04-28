@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Inicio Rigby</title>
+    <link rel="stylesheet" href="/rigby/css/rigby-inicio.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+       
+    <div class="container">
+        
+        <div class="imagem">
+            <img src="/rigby/imagens/pngegg (1).png">
+        </div>
+
+        <div class="texto">
+            <h1>Rigby está com duvida de qual comida fazer para festa, qual ele deve escolher?</h1>
+      
+            <ol>
+                <li>Mac and Cheese</li>
+                <li>Chimichurri</li>
+            </ol>
+
+            
+            <div class="container-button"> 
+                <a id="button" href="#" onclick="selecionar()">Aperte para escolher</a>
+            </div>
+
+        </div>
+    </div> 
+
+</body>
+
+<script>
+   
+    function selecionar(){
+    
+        var Usr= prompt("Escolha 1 ou 2");
+        
+        while (true){
+            if (Usr == 1){
+                return window.location.href = "/rigby/html/rigby-mac-and-cheese.html"
+            
+            }else if (Usr == 2){
+                return window.location.href = "/rigby/html/rigby-chimichurri.html"
+            
+            
+            }else{
+                alert("Valor inserido inválido!");
+                var Usr= prompt("Escolha 1 ou 2")
+            }
+        }
+    }
+
+</script>
+
+</html>

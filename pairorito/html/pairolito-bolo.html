@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Pairulito Bolo</title>
+    <link rel="stylesheet" href="/pairorito/css/pairolito-bolo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+       
+    <div class="container">
+        
+        <div class="imagem">
+            <img src="/pairorito/imagens/favpng_pops-maellard-marceline-the-vampire-queen-mordecai-cartoon-network-wikia.png">
+        </div>
+
+        <div class="texto">
+            <h1>Você se empenha e decide fazer o melhor bolo do mundo! para isso, os ingredientes devem ser escolhidos minuciosamente. o que você pega?</h1>
+      
+            <ol>
+                <li>Não tem nada perfeito nesse mercado</li>
+                <li>farinha, açucár, leite, corante vermelho em gel e etc</li>
+            </ol>
+
+            
+            <div class="container-button"> 
+                <a id="button" href="#" onclick="selecionar()">Aperte para escolher</a>
+            </div>
+
+        </div>
+    </div> 
+
+</body>
+
+<script>
+   
+    function selecionar(){
+    
+        var Usr= prompt("Escolha 1 ou 2");
+        
+        while (true){
+            if (Usr == 1){
+                return window.location.href = "/pairorito/html/pairolito-mundo.html"
+            
+            }else if (Usr == 2){
+                return window.location.href = "/pairorito/html/pairolito-ingredientes.html"
+            
+            
+            }else{
+                alert("Valor inserido inválido!");
+                var Usr= prompt("Escolha 1 ou 2")
+            }
+        }
+    }
+
+</script>
+
+</html>

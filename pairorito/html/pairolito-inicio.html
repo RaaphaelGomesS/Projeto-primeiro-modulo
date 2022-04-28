@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Inicio Pairulito</title>
+    <link rel="stylesheet" href="/pairorito/css/pairolito-inicio.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+       
+    <div class="container">
+        
+        <div class="imagem">
+            <img src="/pairorito/imagens/we_can_all_be_turds_by_kol98-d6ovxn5.png">
+        </div>
+
+        <div class="texto">
+            <h1>Pairulito está com duvida de qual comida fazer para festa, qual ele deve escolher?</h1>
+      
+            <ol>
+                <li>Bolo</li>
+                <li>Tiramisu</li>
+            </ol>
+
+            
+            <div class="container-button"> 
+                <a id="button" href="#" onclick="selecionar()">Aperte para escolher</a>
+            </div>
+
+        </div>
+    </div> 
+
+</body>
+
+<script>
+   
+    function selecionar(){
+    
+        var Usr= prompt("Escolha 1 ou 2");
+        
+        while (true){
+            if (Usr == 1){
+                return window.location.href = "/pairorito/html/pairolito-bolo.html"
+            
+            }else if (Usr == 2){
+                return window.location.href = "/pairorito/html/pairolito-tiramisu.html"
+            
+            
+            }else{
+                alert("Valor inserido inválido!");
+                var Usr= prompt("Escolha 1 ou 2")
+            }
+        }
+    }
+
+</script>
+
+</html>
